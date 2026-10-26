@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lty4869822.github.io/code-adventure-studio/sitemap.xml
