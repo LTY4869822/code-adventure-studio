@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 部署时把下面所有 https://code-adventure.dev 换成你的真实域名 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://code-adventure.dev/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://code-adventure.dev/#/services</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://code-adventure.dev/#/works</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://code-adventure.dev/#/team</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://code-adventure.dev/#/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lty4869822.github.io/code-adventure-studio/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
 </urlset>

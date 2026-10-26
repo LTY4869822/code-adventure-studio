@@ -13,19 +13,23 @@ npm run preview
 
 `npm run build` 将 `site/` 原样复制到 `dist/`，并逐文件验证复制字节。Vite 仅提供本地开发与预览服务器。原版静态前端没有 npm 运行依赖，原厂粒子脚本内已有单份 Three r180。
 
-## Vercel
+## GitHub Pages 发布
 
-仓库根目录包含 `vercel.json`。安装命令为 `npm ci`，构建命令为 `npm run build`，静态输出目录为 `dist`。五页采用 hash 路由，例如 `/#/services`、`/#/works`、`/#/team` 和 `/#/contact`。
+正式地址：[Code-Adventure 工作室](https://lty4869822.github.io/code-adventure-studio/)。
+
+源码分支为 `codex/site-launch`，构建产物分支为 `codex/pages`。在源码分支运行 `npm ci`、`npm run build` 后，将 `dist/` 内容发布到 `codex/pages` 根目录，GitHub Pages 从该分支根目录提供静态网站。五页继续采用 hash 路由，例如 `/#/services`、`/#/works`、`/#/team` 和 `/#/contact`。
+
+仓库中的 `vercel.json` 保留为备用配置，构建命令为 `npm run build`，输出目录为 `dist`；当前尚未部署到 Vercel。
 
 ## 个人网站链接
 
-独立部署到工作室域名之前，在 `site/index.html` 填入个人站的正式地址：
+两站互链已配置。工作室可返回[个人站工作室介绍页](https://lty4869822.github.io/221b-mind-palace/#/studio)，个人站也会前往本工作室。`site/index.html` 已设置：
 
 ```html
-<meta name="personal-site-url" content="https://你的个人站域名/#/studio">
+<meta name="personal-site-url" content="https://lty4869822.github.io/221b-mind-palace/#/studio">
 ```
 
-留空时，内嵌于个人站的 `/studio-site/` 会返回同域 `/#/studio`；本地工作室预览端口 2220 或 2221 会返回个人站端口 2219。独立域名应明确填写正式地址。桥接脚本不读取任何构建环境变量。
+以后更换个人站域名时更新该 meta，再重新构建。桥接脚本不读取构建环境变量；个人站指向工作室的地址可通过个人站构建变量 `VITE_STUDIO_URL` 覆盖。
 
 ## 内容
 

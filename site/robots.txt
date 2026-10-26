@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 部署时把下面这行换成你的真实域名（如 https://code-adventure.dev/sitemap.xml）
-# Sitemap: https://your-domain.example/sitemap.xml
+Sitemap: https://lty4869822.github.io/code-adventure-studio/sitemap.xml
