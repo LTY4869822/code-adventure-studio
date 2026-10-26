@@ -1,0 +1,10 @@
+/* Only the retained personal-site links. Original studio styles stay unchanged. */
+.studio-header-links { display: flex; align-items: center; gap: 18px; }
+.studio-personal-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; min-height: 40px; color: var(--ink-70); }
+.studio-personal-link:hover { color: var(--ink); }
+.studio-personal-link svg { width: 18px; height: 18px; }
+.studio-founder-link { display: inline-flex; align-items: center; gap: 12px; margin-top: 18px; font-size: 13px; color: var(--ink-70); text-decoration: underline; text-underline-offset: 5px; }
+.studio-founder-link:hover { color: var(--ink); }
+.menu-overlay a[data-personal-link] { transition-delay: .4s; }
+[data-personal-link]:focus-visible { outline: 1px solid currentColor; outline-offset: 5px; }
+@media (max-width: 900px) { .studio-header-links { display: none; } }

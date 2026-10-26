@@ -1,0 +1,16 @@
+{
+  "name": "code-adventure-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 2220 --strictPort",
+    "build": "npm run check:deps && node scripts/build-original.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 2220 --strictPort",
+    "check:deps": "node scripts/check-deps.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}
